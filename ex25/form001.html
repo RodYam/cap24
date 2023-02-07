@@ -9,18 +9,23 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+
     </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
 
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="idnome">Nome:</label> <input type="text" name="nome" id="idnome">
         </p>
         <p>
             <label for="idsobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="idsobrenome">
         </p>
+        <p>
+            <label for="idnascimento">Data de Nascimento: </label> <input type="date" name="nascimento" id="idnascimento">
+        </p>
+
         <p><input type="submit" value="Enviar"></p>
 
     </form>
